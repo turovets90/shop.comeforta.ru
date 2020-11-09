@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Сервисные центры обслуживания систем вентиляции</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="css/style.css"/><!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header_row">
+          <div class="left_col">
+            <div class="logo"><a href="#"><img src="img/logo.svg"/></a></div>
+            <div class="contacts_box">
+              <ul class="contacts_list">
+                <li><a href="tel:+375 225 70 86 33">+375 225 70 86 33</a></li>
+                <li><a href="mailto:info@comeforta.com">info@comeforta.com</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="center_col">
+            <div class="top_menu_box">
+              <ul class="top_menu">
+                <li><a href="#">Вентиляция</a></li>
+                <li><a href="#">Комплектующие</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="right_col">
+            <div class="region_box">
+              <div class="dropdown"><span>Ваш регион:</span>
+                <div class="dropdown-toggle" type="button" id="regionMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Беларусь</div>
+                <div class="dropdown-menu" aria-labelledby="regionMenuButton">
+                  <ul>
+                    <li><a href="#">Регион 1</a></li>
+                    <li><a href="#">Регион 2</a></li>
+                    <li><a href="#">Регион 3</a></li>
+                    <li><a href="#">Регион 4</a></li>
+                    <li><a href="#">Регион 5</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="lang_box">
+              <ul class="lang_menu">
+                <li><a class="active" href="#">RU</a></li>
+                <li><a href="#">EN</a></li>
+              </ul>
+            </div>
+            <div class="basket_user_box">
+              <ul class="basket_user_menu">
+                <li><a class="basket_link" href="#"><span class="basket_icon"></span><span class="count">3</span></a></li>
+                <li><a class="user_link" href="#"><span class="user_icon"></span></a></li>
+              </ul>
+            </div>
+            <div class="main_menu_box">
+              <div class="mm_btn">
+                <button class="hamburger"><span></span><span></span><span></span></button>
+              </div>
+              <div class="main_menu">
+                <div class="mm_close"></div>
+                <div>
+                  <ul class="nav d-block d-xl-none">
+                    <li><a href="#">Вентиляция</a></li>
+                    <li><a href="#">Комплектующие</a></li>
+                  </ul>
+                  <ul class="nav">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Оплата и доставка</a></li>
+                    <li class="active"><a href="#">Сервисные центры обслуживания систем вентиляции</a></li>
+                    <li><a href="#">Часто задаваемые вопросы</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="page_content">
+      <div class="container position-relative">
+        <ul class="breadcrumb">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Сервисные центры обслуживания систем вентиляции</a></li>
+        </ul>
+        <h1>Сервисные центры обслуживания систем вентиляции</h1>
+        <div class="centers_box">
+          <div class="centers_box_head">
+            <div class="centers_filters">
+              <div class="custom_select">
+                <select class="form-control" name="center-country" id="center-country">
+                  <option>Страна</option>
+                  <option value="Беларусь">Беларусь</option>
+                  <option value="Россия">Россия</option>
+                </select>
+              </div>
+              <div class="custom_select">
+                <select class="form-control" name="center-city" id="center-city">
+                  <option>Город</option>
+                  <option value="Москва" data-country="Россия">Москва</option>
+                  <option value="Могилёв" data-country="Беларусь">Могилёв</option>
+                  <option value="Минск" data-country="Беларусь">Минск</option>
+                  <option value="Бобруйск" data-country="Беларусь">Бобруйск</option>
+                  <option value="Гомель" data-country="Беларусь">Гомель</option>
+                </select>
+              </div>
+              <button class="btn_default orange" id="search_centers">Подобрать</button>
+            </div>
+            <button class="btn_default become" data-target="#modal_form" data-toggle="modal">Стать сервисным центром</button>
+          </div>
+          <div class="centers_box_body">
+            <div id="centers_map"></div>
+            <div class="row centers_list">
+              <div class="col-12 col-sm-6 col-md-6 col-xl-4 js-center-item" data-country="Россия" data-city="Москва" data-c1="55.783478" data-c2="37.632098">
+                <div class="centers_list_item">
+                  <picture><img src="img/location_icon.svg"/></picture>
+                  <div class="centers_list_item_text">
+                    <div class="title js-locate-center">Сервисный центр Comeforta</div>
+                    <p>г. Москва улица Гиляровского, 39<span>+375 25 123 45 67;   +375 33 123 45 67</span></p>
+                  </div>
+                  <div class="js-balloon-content center-item__balloon-content">
+                    <div class="content_baloon">
+                      <p class="title">Сервисный центр Comeforta</p>
+                      <p class="address">г. Москва улица Гиляровского, 39</p>
+                      <ul>
+                        <li><a href="tel:8 (029) 111-11-11">8 (029) 111-11-11</a></li>
+                        <li><a href="tel:8 (029) 111-11-11">8 (029) 111-11-11</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-xl-4 js-center-item" data-country="Беларусь" data-city="Могилёв" data-c1="53.894548" data-c2="30.330654">
+                <div class="centers_list_item">
+                  <picture><img src="img/location_icon.svg"/></picture>
+                  <div class="centers_list_item_text">
+                    <div class="title js-locate-center">Могилёвский основной центр</div>
+                    <p>г. Могилёв ул. Победителей, д. 222<span>+375 25 123 45 67;   +375 33 123 45 67</span></p>
+                  </div>
+                  <div class="js-balloon-content center-item__balloon-content">
+                    <div class="content_baloon">
+                      <p class="title">Могилёвский основной центр</p>
+                      <p class="address">г. Могилёв ул. Победителей, д. 222</p>
+                      <ul>
+                        <li><a href="tel:8 (029) 111-11-11">8 (029) 111-11-11</a></li>
+                        <li><a href="tel:8 (029) 111-11-11">8 (029) 111-11-11</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-xl-4 js-center-item" data-country="Беларусь" data-city="Минск" data-c1="53.922273" data-c2="27.473850">
+                <div class="centers_list_item">
+                  <picture><img src="img/location_icon.svg"/></picture>
+                  <div class="centers_list_item_text">
+                    <div class="title js-locate-center">Центральный офис</div>
+                    <p>г. Минск ул. Петра Глебки, д. 222 оф. 452<span>+375 25 123 45 67;   +375 33 123 45 67</span></p>
+                  </div>
+                  <div class="js-balloon-content center-item__balloon-content">
+                    <div class="content_baloon">
+                      <p class="title">Центральный офис</p>
+                      <p class="address">г. Минск ул. Петра Глебки, д. 222 оф. 452</p>
+                      <ul>
+                        <li><a href="tel:8 (029) 111-11-11">8 (029) 111-11-11</a></li>
+                        <li><a href="tel:8 (029) 111-11-11">8 (029) 111-11-11</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-xl-4 js-center-item" data-country="Беларусь" data-city="Бобруйск" data-c1="53.135658" data-c2="29.226319">
+                <div class="centers_list_item">
+                  <picture><img src="img/location_icon.svg"/></picture>
+                  <div class="centers_list_item_text">
+                    <div class="title js-locate-center">Сервисный центр Бобруйска</div>
+                    <p>г. Бобруйск ул. Победы, д. 15 оф. 56<span>+375 25 123 45 67;   +375 33 123 45 67</span></p>
+                  </div>
+                  <div class="js-balloon-content center-item__balloon-content">
+                    <div class="content_baloon">
+                      <p class="title">Сервисный центр Бобруйска</p>
+                      <p class="address">г. Бобруйск ул. Победы, д. 15 оф. 56</p>
+                      <ul>
+                        <li><a href="tel:8 (029) 111-11-11">8 (029) 111-11-11</a></li>
+                        <li><a href="tel:8 (029) 111-11-11">8 (029) 111-11-11</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-6 col-xl-4 js-center-item" data-country="Беларусь" data-city="Гомель" data-c1="52.424160" data-c2="31.014272">
+                <div class="centers_list_item">
+                  <picture><img src="img/location_icon.svg"/></picture>
+                  <div class="centers_list_item_text">
+                    <div class="title js-locate-center">Сервисный центр с очень длинным названием</div>
+                    <p>г. Гомель ул. Захарова, д. 97<span>+375 25 123 45 67;   +375 33 123 45 67</span></p>
+                  </div>
+                  <div class="js-balloon-content center-item__balloon-content">
+                    <div class="content_baloon">
+                      <p class="title">Сервисный центр с очень длинным названием</p>
+                      <p class="address">г. Гомель ул. Захарова, д. 97</p>
+                      <ul>
+                        <li><a href="tel:8 (029) 111-11-11">8 (029) 111-11-11</a></li>
+                        <li><a href="tel:8 (029) 111-11-11">8 (029) 111-11-11</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal_form" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button class="close" data-dismiss="modal" aria-label="Close"></button>
+            <div class="modal_title">Стать сервисным центром</div>
+            <div class="modal_subtitle">Пожалуйста, заполните форму, мы рассмотрим вашу заявку и свяжемся с вами</div>
+            <form class="contact_form">
+              <div class="row">
+                <div class="col-12 col-md-6 col-xl-4">
+                  <div class="row">
+                    <div class="col-12 field">
+                      <input class="form-control" type="text" placeholder="Контактное лицо*"/>
+                    </div>
+                    <div class="col-12 field">
+                      <input class="form-control" type="text" placeholder="Название компании"/>
+                    </div>
+                    <div class="col-12 field">
+                      <input class="form-control" type="text" placeholder="Сайт компании"/>
+                    </div>
+                    <div class="col-12 field">
+                      <input class="form-control" type="text" placeholder="Телефон"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                  <div class="row">
+                    <div class="col-12 field">
+                      <input class="form-control" type="text" placeholder="Электронный адрес*"/>
+                    </div>
+                    <div class="col-12 field">
+                      <input class="form-control" type="text" placeholder="Страна*"/>
+                    </div>
+                    <div class="col-12 field">
+                      <input class="form-control" type="text" placeholder="Регион"/>
+                    </div>
+                    <div class="col-12 field">
+                      <input class="form-control" type="text" placeholder="Город*"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-12 col-xl-4">
+                  <div class="row">
+                    <div class="col-12 field">
+                      <input class="form-control" type="text" placeholder="Адрес СЦ"/>
+                    </div>
+                    <div class="col-12 field">
+                      <div class="custom_select">
+                        <select class="form-control">
+                          <option>Предлагаемая услуга</option>
+                          <option>Предлагаемая услуга 1</option>
+                          <option>Предлагаемая услуга 2</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12 field">
+                      <input class="form-control file" type="file"/>
+                    </div>
+                    <div class="col-12 field">
+                      <button class="btn_default orange" type="submit">Отправить</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-6 col-xl-4">
+            <p class="copyright">Comeforta © 2020 Все права защищены</p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-xl-4">
+            <ul class="social_menu">
+              <li><a class="instagram" href="#"></a></li>
+              <li><a class="viber" href="#"></a></li>
+              <li><a class="facebook" href="#"></a></li>
+              <li><a class="youtube" href="#"></a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-xl-4 text-xl-right">
+            <p>Корпоративный сайт <a href="#">ventmcom.ru</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap-filestyle.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/fullpage.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;amp;amp;apikey=1ccacf8b-596c-44d5-9622-c57eef3e0412"></script>
+    <script src="js/map.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
