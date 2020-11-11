@@ -15,8 +15,29 @@ $(document).ready(function(){
         $('#fullpage_menu').css({
             'left': c_left+15+'px'
         });
+
+
+
+
+
     });
     $(window).resize();
+
+    /*
+        $('.made_list_item').each(function(){
+            var made_list_item_left = $(this).offset().left;
+            var made_list_item_top = $(this).position().top;
+            var made_text=$(this).find('.made_text');
+            $(made_text).css({
+                'left': made_list_item_left-310+'px',
+                'top': made_list_item_top+10+'px'
+            });
+        });
+
+     */
+
+    $('.made_list .made_list_item').tooltip();
+
 
 
     $('.made_more').click(function(){
