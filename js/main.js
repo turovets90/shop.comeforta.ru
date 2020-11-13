@@ -8,6 +8,7 @@ $(document).ready(function(){
                 menu: '#fullpage_menu',
                 lockAnchors: false,
                 anchors:['screen_1', 'screen_2','screen_3','screen_4','screen_5','screen_6'],
+                //scrollingSpeed: 2000,
             });
 
         }
@@ -23,18 +24,6 @@ $(document).ready(function(){
     });
     $(window).resize();
 
-    /*
-        $('.made_list_item').each(function(){
-            var made_list_item_left = $(this).offset().left;
-            var made_list_item_top = $(this).position().top;
-            var made_text=$(this).find('.made_text');
-            $(made_text).css({
-                'left': made_list_item_left-310+'px',
-                'top': made_list_item_top+10+'px'
-            });
-        });
-
-     */
 
     $('.made_list .made_list_item').tooltip();
 
@@ -70,7 +59,8 @@ $(document).ready(function(){
         arrows: false,
         dots: false,
         autoplay: false,
-        speed: 1000,
+        speed: 2000,
+        autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1
     });
