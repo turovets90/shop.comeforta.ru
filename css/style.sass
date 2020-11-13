@@ -1075,7 +1075,21 @@ h2, .h2
 
 
 .page_content
-  min-height: calc(100vh - 190px)
+  //min-height: calc(100vh - 190px)
+  @media (min-width: 768px)
+    height: calc(100vh - 190px)
+    overflow: auto
+    &::-webkit-scrollbar
+      -webkit-appearance: none
+      width: 0
+    &::-webkit-scrollbar:vertical
+      width: 3px
+      background: #c6c8ca
+      border-radius: 3px
+    &::-webkit-scrollbar-thumb
+      border-radius: 3px
+      background-color: $color_orange
+
 
 
 h3, .h3
