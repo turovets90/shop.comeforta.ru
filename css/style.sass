@@ -1648,8 +1648,12 @@ header
   left: 37px
   @media (max-width: 1200px)
     display: none
+  @media(max-height: 800px)
+    top: 145px
   li
       margin-bottom: 15px
+      @media (max-height: 800px)
+        margin-bottom: 5px
       &.active
         a
           color: #ffffff
@@ -1705,6 +1709,9 @@ header
       font-size: 16px
       color: #fff
       line-height: 26px
+      @media(max-height: 800px)
+        line-height: 1.2
+        font-size: 15px
       @media (max-width: 1200px)
         font-size: 14px
         line-height: 1.2
@@ -1715,6 +1722,10 @@ header
       padding-bottom: 15px
       margin-bottom: 25px
       line-height: 1.2
+      @media (max-height: 800px)
+        margin-bottom: 10px
+        padding-bottom: 5px
+        font-size: 26px
       @media (max-width: 1200px)
         margin-bottom: 10px
         padding-bottom: 10px
@@ -1760,6 +1771,8 @@ header
       margin-bottom: 30px
       @media (max-width: 1200px)
         margin-bottom: 20px
+      @media (max-height: 800px)
+        margin-bottom: 10px
       picture
         width: 46px
         min-width: 46px
@@ -1958,4 +1971,9 @@ header
       right: 11%
       @media (max-width: 1200px)
         display: none
+
+
+
+
+
 
