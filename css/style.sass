@@ -1679,6 +1679,7 @@ header
   section
     background-size: cover
     background-position: center
+    background-repeat: no-repeat
     @media (max-width: 1200px)
       height: 500px
       &#section_1
@@ -1944,4 +1945,17 @@ header
         font-size: 15px
         line-height: 20px
         font-family: $Montserrat-Regular
+
+#section_4
+  @media (min-width: 1201px)
+    background: none !important
+  .screen4_content
+
+    img
+      max-height: 95%
+      position: absolute
+      top: 22%
+      right: 11%
+      @media (max-width: 1200px)
+        display: none
 

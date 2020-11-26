@@ -58,8 +58,8 @@ $(document).ready(function(){
         infinite: true,
         arrows: false,
         dots: false,
-        autoplay: false,
-        speed: 2000,
+        autoplay: true,
+        speed: 3000,
         autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1
@@ -81,7 +81,7 @@ $(document).ready(function(){
     function startProgressbar() {
         resetProgressbar();
         percentTime = 0;
-        tick = setInterval(interval, 10);
+        tick = setInterval(interval, 20);
     }
 
     function interval() {
