@@ -789,8 +789,14 @@ footer
   color: #fff
   +flex
   +ai-center
+  @media (min-width: 992px)
+
   @media (min-width: 768px)
     min-height: 95px
+    position: fixed
+    bottom: 0
+    left: 0
+    width: 100%
   @media (max-width: 767px)
     padding: 20px 0
   @media (max-width: 767px)
@@ -1077,7 +1083,7 @@ h2, .h2
 .page_content
   //min-height: calc(100vh - 190px)
   @media (min-width: 768px)
-    height: calc(100vh - 190px)
+    height: calc(100vh - 94px)
     overflow: auto
     &::-webkit-scrollbar
       -webkit-appearance: none
