@@ -122,9 +122,11 @@ function init () {
     var windowWidth = $(window).width();
     myMap = new ymaps.Map('centers_map', {
         center: [53.902284, 27.561831],
-        zoom: 6
+        zoom: 6,
+
     }, {
-        searchControlProvider: 'yandex#search'
+        searchControlProvider: 'yandex#search',
+
     });
 
     clusterer = new ymaps.Clusterer({
@@ -156,7 +158,7 @@ function init () {
     if(windowWidth < 800) {
         myMap.behaviors.disable(['drag']);
     } else {
-        // myMap.behaviors.disable(['scrollZoom']);
+         myMap.behaviors.disable(['scrollZoom']);
     }
 
 
